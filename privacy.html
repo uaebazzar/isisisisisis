@@ -8,31 +8,81 @@
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
-      background-color: #f6f7f8;
-      color: #111;
+      background-color: #000;
+      color: #fff;
       line-height: 1.7;
       margin: 0;
       padding: 0;
     }
+
     .container {
       max-width: 820px;
-      margin: auto;
+      margin: 40px auto;
       padding: 32px 20px 60px;
+      background-color: #111;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(255,255,255,0.05);
     }
-    h1 { font-size: 32px; }
-    h2 { margin-top: 32px; }
-    p { font-size: 15px; }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 32px;
+      margin-bottom: 12px;
+      font-size: 22px;
+      color: #fff;
+    }
+
+    p {
+      font-size: 15px;
+      margin-bottom: 16px;
+      color: #eee;
+    }
+
     .updated {
-      color: #666;
+      color: #aaa;
       font-size: 13px;
       margin-bottom: 24px;
+      text-align: center;
     }
+
     footer {
       margin-top: 50px;
       font-size: 13px;
-      color: #666;
+      color: #aaa;
+      text-align: center;
     }
-    a { color: #2b8cee; text-decoration: none; }
+
+    a {
+      color: #2b8cee;
+      text-decoration: none;
+    }
+
+    /* Button link style */
+    a.button-link {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    a.button-link:hover {
+      background-color: #ddd;
+    }
+
+    /* Important points in red */
+    .important {
+      color: #ff4d4f;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -47,17 +97,17 @@
 
   <h2>Information We Collect</h2>
   <p>
-    Luncher does <strong>not collect any personal or non-personal information</strong> from users. This includes names, emails, device information, or any usage data. We simply do not collect data.
+    Luncher does <span class="important">not collect any personal or non-personal information</span> from users. This includes names, emails, device information, or any usage data. We simply do not collect data.
   </p>
 
   <h2>Data Sharing</h2>
   <p>
-    Since we do not collect any data, Luncher does not share, sell, or distribute any user information to third parties, advertisers, or anyone else.
+    Since we do not collect any data, Luncher does <span class="important">not share, sell, or distribute any user information</span> to third parties, advertisers, or anyone else.
   </p>
 
   <h2>Advertising</h2>
   <p>
-    Luncher uses Google AdMob to display rewarded advertisements. <strong>No personal information is shared with Google or any advertisers</strong>. Ads are shown without tracking users.
+    Luncher uses Google AdMob to display rewarded advertisements. <span class="important">No personal information is shared with Google or any advertisers</span>. Ads are shown without tracking users.
   </p>
 
   <p>
@@ -69,13 +119,15 @@
 
   <h2>Children’s Privacy</h2>
   <p>
-    Luncher is not intended for children under 13. Since we do not collect any information, there is no personal data from children collected.
+    Luncher is <span class="important">not intended for children under 13</span>. Since we do not collect any information, there is no personal data from children collected.
   </p>
 
   <h2>Data Safety Compliance</h2>
   <p>
-    Luncher fully complies with Google Play’s Data Safety requirements. No personal or sensitive data is collected, stored, or shared, ensuring complete user privacy.
+    Luncher fully complies with Google Play’s Data Safety requirements. <span class="important">No personal or sensitive data is collected, stored, or shared</span>, ensuring complete user privacy.
   </p>
+
+  <a href="privacy.html" class="button-link">View Privacy Policy</a>
 
   <footer>
     © 2026 Luncher

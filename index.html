@@ -2,37 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Luncher – Simple Android Utility</title>
+  <title>Privacy Policy – Luncher</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    /* Base styles */
     body {
       font-family: 'Inter', 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
-      background-color: #f9fafb;
-      color: #111;
+      background-color: #000; /* black background */
+      color: #fff;
       margin: 0;
       padding: 0;
       line-height: 1.7;
-      overflow-x: hidden;
     }
 
     .container {
       max-width: 900px;
-      margin: auto;
+      margin: 50px auto;
       padding: 40px 20px 80px;
-      background: #fff;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      background-color: #111; /* dark container */
       border-radius: 16px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      transition: transform 0.3s ease, opacity 0.3s ease;
+      box-shadow: 0 8px 24px rgba(255,255,255,0.08);
     }
 
     h1 {
       font-size: 38px;
       margin-bottom: 20px;
-      color: #1a1a1a;
+      color: #fff;
       text-align: center;
     }
 
@@ -40,12 +35,12 @@
       margin-top: 36px;
       margin-bottom: 14px;
       font-size: 24px;
-      color: #1a1a1a;
+      color: #fff;
     }
 
     p {
       font-size: 16px;
-      color: #4b5563;
+      color: #eee;
       margin-bottom: 16px;
     }
 
@@ -66,83 +61,63 @@
       color: #9ca3af;
     }
 
-    footer a {
+    a {
       color: #2b8cee;
       text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-    footer a:hover {
-      color: #1d4ed8;
     }
 
-    /* Modern button link */
-    a.button-link {
-      display: inline-block;
-      padding: 12px 22px;
-      background: #2b8cee;
-      color: #fff;
-      border-radius: 10px;
-      text-decoration: none;
-      margin-top: 20px;
-      transition: background 0.3s ease, transform 0.2s ease;
-    }
-    a.button-link:hover {
-      background: #1d4ed8;
-      transform: translateY(-2px);
-    }
-
-    /* Animation for page transition */
-    .fade-out {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.5s ease, transform 0.5s ease;
+    .important {
+      color: #ff4d4f; /* red color */
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-<div class="container" id="main-container">
-  <h1>Luncher</h1>
+<div class="container">
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: January 2026</div>
+
   <p>
-    Luncher is a lightweight Android app designed to provide useful features through a clean and modern interface.
-    Everything is simple, fast, and privacy-focused.
+    Luncher respects your privacy. This Privacy Policy explains how we handle information in our app.
   </p>
 
-  <h2>Key Features</h2>
-  <ul>
-    <li>Fast and simple design</li>
-    <li>Privacy-focused experience</li>
-    <li>Modern UI with system theme support</li>
-    <li>Lightweight and minimalistic</li>
-  </ul>
-
-  <h2>About Luncher</h2>
+  <h2>Information We Collect</h2>
   <p>
-    Luncher is built to enhance your Android experience while respecting your privacy.
-    We do not collect any personal information.
+    Luncher does <span class="important">not collect any personal or non-personal information</span> from users. This includes names, emails, device information, or any usage data. We simply do not collect data.
   </p>
 
-  <a href="privacy.html" class="button-link" id="privacy-link">View Privacy Policy</a>
+  <h2>Data Sharing</h2>
+  <p>
+    Since we do not collect any data, Luncher does <span class="important">not share, sell, or distribute any user information</span> to third parties, advertisers, or anyone else.
+  </p>
+
+  <h2>Advertising</h2>
+  <p>
+    Luncher uses Google AdMob to display rewarded advertisements. <span class="important">No personal information is shared with Google or any advertisers</span>. Ads are shown without tracking users.
+  </p>
+
+  <p>
+    Learn more:
+    <a href="https://policies.google.com/privacy" target="_blank">
+      Google Privacy Policy
+    </a>
+  </p>
+
+  <h2>Children’s Privacy</h2>
+  <p>
+    Luncher is <span class="important">not intended for children under 13</span>. Since we do not collect any information, there is no personal data from children collected.
+  </p>
+
+  <h2>Data Safety Compliance</h2>
+  <p>
+    Luncher fully complies with Google Play’s Data Safety requirements. <span class="important">No personal or sensitive data is collected, stored, or shared</span>, ensuring complete user privacy.
+  </p>
 
   <footer>
-    © 2026 Luncher. All rights reserved.
+    © 2026 Luncher
   </footer>
 </div>
-
-<script>
-  const link = document.getElementById('privacy-link');
-  const container = document.getElementById('main-container');
-
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    const url = this.href;
-    container.classList.add('fade-out'); // start animation
-    setTimeout(() => {
-      window.location.href = url; // navigate after animation
-    }, 500); // match transition duration
-  });
-</script>
 
 </body>
 </html>
